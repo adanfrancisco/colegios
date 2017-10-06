@@ -1934,7 +1934,12 @@ pre {
   -webkit-box-flex: 4.5;
       -ms-flex-positive: 4.5;
           flex-grow: 4.5; }
-
+.items-list-page .item-list .item-col.item-col-description {
+    text-align: left;
+    -webkit-box-flex: 4.5;
+    -ms-flex-positive: 4.5;
+    flex-grow: 15.5;
+}
 .items-list-page .item-list .item-col.item-col-date {
   text-align: right; }
 
