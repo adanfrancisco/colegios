@@ -128,17 +128,26 @@
 										<i class="fa fa-home"></i> Inicio
 									</a>
                                 </li>
-								 <li >
-                                   <a href="items-colegios.html"><i class="fa fa-university"></i>  Colegios</a>     
+                                <li>
+                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i>  Tipo Curso</a>     
                                 </li>
-								 <li>
-                                   <a href="items-empresas.html"><i class="fa fa-truck"></i>  Empresas</a>     
+								<li>
+                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i> Curso</a>     
                                 </li>
                                 <li class="active">
-                                   <a href="items-usuarios.html"><i class="fa fa-users"></i>  Usuarios</a>     
+                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i>  Alergias</a>     
+                                </li>								
+                                <li>
+                                   <a href="items-plantillas.html"><i class="fa fa-object-ungroup"></i>  Plantillas</a>     
+                                </li>								
+								 <li >
+                                   <a href="items-educadores.html"><i class="fa fa-graduation-cap"></i>  Educadores</a>     
+                                </li>
+								 <li >
+                                   <a href="items-alumnos.html"><i class="fa fa-user-circle"></i>  Alumnos</a>     
                                 </li>
                                 <li>
-                                   <a href="reportes.html"><i class="fa fa-bar-chart"></i>  Reportes</a>     
+                                   <a href="items-observaciones.html"><i class="fa fa-comments"></i>  Observaciones</a>     
                                 </li>								
                             </ul>
                         </nav>
@@ -240,82 +249,253 @@
                         </ul>
                     </footer>
                 </aside>
-				<div class="sidebar-overlay" id="sidebar-overlay"></div>
+                <div class="sidebar-overlay" id="sidebar-overlay"></div>
                 <div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
                 <div class="mobile-menu-handle"></div>
-                <article class="content item-editor-page">
-                    <div class="title-block">
-                        <h3 class="title"> Nuevo Usuario
-                            <span class="sparkline bar" data-type="bar"></span>
-                        </h3>
-                    </div>
-                    <form name="item">
-                        <div class="card card-block">
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Nombre: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control boxed" placeholder=""> </div>
-                                   
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Teléfono: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control boxed" placeholder=""> </div>
-                            </div>	
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Email: </label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control boxed" placeholder=""> </div>
-                            </div>
-							<div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Sexo </label>
-                                <div class="col-sm-10">
-                                    <label>
-										<input class="radio" name="inline-radios" type="radio" checked="checked">
-										<span>Femenino</span>
-									</label>
-									<label>
-										<input class="radio" name="inline-radios" type="radio">
-										<span>Masculino</span>
-									</label> </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Pertenece a: </label>
-                                <div class="col-sm-10">
-                                    <select class="c-select form-control boxed">
-                                        <option selected>- Seleccionar -</option>
-                                        <option value="1">Colegio - Colegio del Carmen</option>
-                                        <option value="2">Colegio - Hermanas Viscal</option>
-                                        <option value="3">Empresa - Catefing Ilbest</option>
-                                        <option value="4">Empresa - El Placer</option>
-                                    </select>
-                                </div>
-                            </div>							
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Observación: </label>
-                                <div class="col-sm-10">
-									<textarea id="descripcion" class="form-control boxed"></textarea>
-								</div>	
-							</div>	
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label text-xs-right"> Activado </label>
-                                <div class="col-sm-10">
-                                    <label>
-										<input class="radio" name="estado-radios" type="radio" checked="checked">
-										<span>Si</span>
-									</label>
-									<label>
-										<input class="radio" name="estado-radios" type="radio">
-										<span>No</span>
-									</label> </div>
-                            </div>							
-                            <div class="form-group row">
-                                <div class="col-sm-10 col-sm-offset-2">
-                                    <button type="submit" class="btn btn-primary"> Registrar </button>
+                <article class="content items-list-page">
+                    <div class="title-search-block">
+                        <div class="title-block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="title"> Alergias        
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                        <div class="items-search">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <input type="text" class="form-control boxed rounded-s" placeholder="Buscar...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary rounded-s" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+					 <article class="item-editor-page">
+						
+						<form name="item">
+							<div class="card card-block">
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label text-xs-right"> Alergia: </label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control boxed" placeholder=""> </div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label text-xs-right"> Descripción: </label>
+									<div class="col-sm-10">
+										<textarea id="descripcion" class="form-control boxed"></textarea>
+									</div>
+									   
+								</div>
+								<div class="form-group row">
+									<div class="col-sm-10 col-sm-offset-2">
+										<button type="submit" class="btn btn-primary"> Registrar </button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</article>
+                    <div class="card items">
+                        <ul class="item-list striped">
+                            <li class="item item-list-header hidden-sm-down">
+                                <div class="item-row">
+                                    <div class="item-col fixed item-col-check">
+                                        <label class="item-check" id="select-all-items">
+                                            <input type="checkbox" class="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="item-col item-col-header item-col-title">
+                                        <div>
+                                            <span>Alergia</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-col item-col-header item-col-description">
+                                        <div class="no-overflow">
+                                            <span>Descripción</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item-col item-col-header fixed item-col-actions-dropdown"> </div>
+                                </div>
+                            </li>
+                            
+                            <li class="item">
+                                <div class="item-row">
+                                    <div class="item-col fixed item-col-check">
+                                        <label class="item-check" id="select-all-items">
+                                            <input type="checkbox" class="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+									 <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Nombre</div>
+                                        <div>
+                                            <h4 class="item-title"> Alergia 1 </h4>
+                                        </div>
+                                    </div>
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
+                                        <div class="no-overflow">
+                                            Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
+                                        </div>
+                                    </div>									
+                                    <div class="item-col fixed item-col-actions-dropdown">
+                                        <div class="item-actions-dropdown">
+                                            <a class="item-actions-toggle-btn">
+                                                <span class="inactive">
+                                                    <i class="fa fa-cog"></i>
+                                                </span>
+                                                <span class="active">
+                                                    <i class="fa fa-chevron-circle-right"></i>
+                                                </span>
+                                            </a>
+                                            <div class="item-actions-block">
+                                                <ul class="item-actions-list">
+                                                    <li>
+                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
+                                                            <i class="fa fa-trash-o "></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="edit" href="">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-row">
+                                    <div class="item-col fixed item-col-check">
+                                        <label class="item-check" id="select-all-items">
+                                            <input type="checkbox" class="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Nombre</div>
+                                        <div>
+                                            <h4 class="item-title"> Alergia 2 </h4>
+                                        </div>
+                                    </div>
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
+                                        <div class="no-overflow">
+                                            Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
+                                        </div>
+                                    </div>	
+                                    <div class="item-col fixed item-col-actions-dropdown">
+                                        <div class="item-actions-dropdown">
+                                            <a class="item-actions-toggle-btn">
+                                                <span class="inactive">
+                                                    <i class="fa fa-cog"></i>
+                                                </span>
+                                                <span class="active">
+                                                    <i class="fa fa-chevron-circle-right"></i>
+                                                </span>
+                                            </a>
+                                            <div class="item-actions-block">
+                                                <ul class="item-actions-list">
+                                                    <li>
+                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
+                                                            <i class="fa fa-trash-o "></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="edit" href="item-empresa.html">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-row">
+                                    <div class="item-col fixed item-col-check">
+                                        <label class="item-check" id="select-all-items">
+                                            <input type="checkbox" class="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Nombre</div>
+                                        <div>
+                                           <h4 class="item-title"> Alergia 3 </h4>
+                                        </div>
+                                    </div>
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
+                                        <div class="no-overflow">
+                                             Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
+                                        </div>
+                                    </div>	
+                                    <div class="item-col fixed item-col-actions-dropdown">
+                                        <div class="item-actions-dropdown">
+                                            <a class="item-actions-toggle-btn">
+                                                <span class="inactive">
+                                                    <i class="fa fa-cog"></i>
+                                                </span>
+                                                <span class="active">
+                                                    <i class="fa fa-chevron-circle-right"></i>
+                                                </span>
+                                            </a>
+                                            <div class="item-actions-block">
+                                                <ul class="item-actions-list">
+                                                    <li>
+                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
+                                                            <i class="fa fa-trash-o "></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="edit" href="item-empresa.html">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>							
+                        
+                        </ul>
+                    </div>
+                    <nav class="text-right">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href=""> Prev </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href=""> 1 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href=""> 2 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href=""> 3 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href=""> 4 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href=""> 5 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href=""> Next </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </article>
                 <footer class="footer">
                     <div class="footer-block author">
@@ -348,68 +528,7 @@
                                 <div class="tab-content modal-tab-content">
                                     <div class="tab-pane fade" id="gallery" role="tabpanel">
                                         <div class="images-container">
-                                            <div class="row">
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/eduardo_olv/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/eduardo_olv/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/eduardo_olv/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 col-sm-4 col-md-4 col-lg-3">
-                                                    <div class="image-container">
-                                                        <div class="image" style="background-image:url('https://s3.amazonaws.com/uifaces/faces/twitter/eduardo_olv/128.jpg')"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="row"> </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade active in" id="upload" role="tabpanel">
