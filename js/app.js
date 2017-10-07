@@ -1402,6 +1402,11 @@ $(function() {
 
 });
 
+function toggleIcon(e) {
+    $(".more-less")
+        .toggleClass('fa-plus fa-minus');
+}
+
 
 /***********************************************
 *        NProgress Settings

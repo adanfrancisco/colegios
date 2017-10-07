@@ -129,10 +129,10 @@
 									</a>
                                 </li>
                                 <li>
-                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i>  Tipo Curso</a>     
+                                   <a href="items-tipo-curso.html"><i class="fa fa-rocket"></i>  Tipo Curso</a>     
                                 </li>
 								<li>
-                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i> Curso</a>     
+                                   <a href="items-cursos.html"><i class="fa  fa-book"></i> Cursos</a>     
                                 </li>
                                 <li class="active">
                                    <a href="items-alergias.html"><i class="fa fa-leaf"></i>  Alergias</a>     
@@ -146,6 +146,12 @@
 								 <li >
                                    <a href="items-alumnos.html"><i class="fa fa-user-circle"></i>  Alumnos</a>     
                                 </li>
+                                <li>
+                                   <a href="items-promociones.html"><i class="fa fa-flag-o"></i>  Promociones</a>     
+                                </li>								
+                                <li>
+                                   <a href="items-notificaciones.html"><i class="fa fa-bullhorn"></i>  Notificaciones</a>     
+                                </li>								
                                 <li>
                                    <a href="items-observaciones.html"><i class="fa fa-comments"></i>  Observaciones</a>     
                                 </li>								
@@ -275,29 +281,40 @@
                             </form>
                         </div>
                     </div>
+					
 					 <article class="item-editor-page">
-						
-						<form name="item">
-							<div class="card card-block">
-								<div class="form-group row">
-									<label class="col-sm-2 form-control-label text-xs-right"> Alergia: </label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control boxed" placeholder=""> </div>
-								</div>
-								<div class="form-group row">
-									<label class="col-sm-2 form-control-label text-xs-right"> Descripción: </label>
-									<div class="col-sm-10">
-										<textarea id="descripcion" class="form-control boxed"></textarea>
+						<p onclick="toggleIcon();">
+						  <a  class="btn btn-primary panel-group" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							Registrar Alergia
+							 <i class="more-less fa fa-plus"></i>
+						  </a>						
+
+						</p>
+						<div class="collapse" id="collapseExample">
+						  <div class="card card-block">
+							<form name="item">
+								<div class="card card-block">
+									<div class="form-group row">
+										<label class="col-sm-2 form-control-label text-xs-right"> Alergia: </label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control boxed" placeholder=""> </div>
 									</div>
-									   
-								</div>
-								<div class="form-group row">
-									<div class="col-sm-10 col-sm-offset-2">
-										<button type="submit" class="btn btn-primary"> Registrar </button>
+									<div class="form-group row">
+										<label class="col-sm-2 form-control-label text-xs-right"> Descripción: </label>
+										<div class="col-sm-10">
+											<textarea id="descripcion" class="form-control boxed"></textarea>
+										</div>
+										   
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-10 col-sm-offset-2">
+											<button type="submit" class="btn btn-primary"> Registrar </button>
+										</div>
 									</div>
 								</div>
-							</div>
-						</form>
+							</form>
+						  </div>
+						</div>					 
 					</article>
                     <div class="card items">
                         <ul class="item-list striped">
@@ -410,7 +427,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="edit" href="item-empresa.html">
+                                                        <a class="edit" >
                                                             <i class="fa fa-pencil"></i>
                                                         </a>
                                                     </li>
@@ -458,7 +475,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="edit" href="item-empresa.html">
+                                                        <a class="edit" >
                                                             <i class="fa fa-pencil"></i>
                                                         </a>
                                                     </li>

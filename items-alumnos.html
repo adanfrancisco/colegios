@@ -128,21 +128,33 @@
 										<i class="fa fa-home"></i> Inicio
 									</a>
                                 </li>
-								 <li class="active">
-                                   <a href="items-colegios.html"><i class="fa fa-university"></i>  Colegios</a>     
-                                </li>
-								 <li>
-                                   <a href="items-empresas.html"><i class="fa fa-truck"></i>  Empresas</a>     
-                                </li>
                                 <li>
-                                   <a href="items-usuarios.html"><i class="fa fa-users"></i>  Usuarios</a>     
+                                   <a href="items-tipo-curso.html"><i class="fa fa-rocket"></i>  Tipo Curso</a>     
                                 </li>
-                                <li>
-                                   <a href="reportes.html"><i class="fa fa-bar-chart"></i>  Reportes</a>     
-                                </li>	
 								<li >
-                                   <a href="items-auditoria.html"><i class="fa fa-binoculars"></i>  Auditoría</a>     
-                                </li>	
+                                   <a href="items-cursos.html"><i class="fa  fa-book"></i> Cursos</a>     
+                                </li>
+                                <li >
+                                   <a href="items-alergias.html"><i class="fa fa-leaf"></i>  Alergias</a>     
+                                </li>								
+                                <li>
+                                   <a href="items-plantillas.html"><i class="fa fa-object-ungroup"></i>  Plantillas</a>     
+                                </li>								
+								 <li >
+                                   <a href="items-educadores.html"><i class="fa fa-graduation-cap"></i>  Educadores</a>     
+                                </li>
+								 <li class="active">
+                                   <a href="items-alumnos.html"><i class="fa fa-user-circle"></i>  Alumnos</a>     
+                                </li>
+                                <li>
+                                   <a href="items-promociones.html"><i class="fa fa-flag-o"></i>  Promociones</a>     
+                                </li>								
+                                <li>
+                                   <a href="items-notificaciones.html"><i class="fa fa-bullhorn"></i>  Notificaciones</a>     
+                                </li>								
+                                <li>
+                                   <a href="items-observaciones.html"><i class="fa fa-comments"></i>  Observaciones</a>     
+                                </li>								
                             </ul>
                         </nav>
                     </div>
@@ -251,7 +263,7 @@
                         <div class="title-block">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h3 class="title"> Colegios        
+                                    <h3 class="title"> Alumnos        
                                     </h3>
                                 </div>
                             </div>
@@ -269,79 +281,121 @@
                             </form>
                         </div>
                     </div>
-					 <article class="item-editor-page">
-						<p onclick="toggleIcon();">
-						  <a  class="btn btn-primary panel-group" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-							Registrar Colegio
-							 <i class="more-less fa fa-plus"></i>
-						  </a>						
+				<article class="item-editor-page">
+					<p onclick="toggleIcon();">
+					  <a  class="btn btn-primary panel-group" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						Registrar Alumno
+						 <i class="more-less fa fa-plus"></i>
+					  </a>						
 
-						</p>
-						<div class="collapse" id="collapseExample">
-						  <div class="card card-block">
-						   <form name="item">
-								<div class="card card-block">
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Nombre: </label>
-										<div class="col-sm-10">
-											<input type="text" class="form-control boxed" placeholder=""> </div>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Descripción: </label>
-										<div class="col-sm-10">
-											<textarea id="descripcion" class="form-control boxed"></textarea>
+					</p>
+					<div class="collapse" id="collapseExample">
+					  <div class="card card-block">
+											<div class="card sameheight-item">
+					<div class="card-block">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-tabs-bordered">
+							<li class="nav-item">
+								<a href="#home" class="nav-link active" data-target="#home" data-toggle="tab" aria-controls="home" role="tab">Datos Nuevo Alumno</a>
+							</li>
+							<li class="nav-item">
+								<a href="#profile" class="nav-link" data-target="#profile" aria-controls="profile" data-toggle="tab" role="tab">Registro Masivo de Alumnos</a>
+							</li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content tabs-bordered">
+							<div class="tab-pane in active" id="home">
+								<form name="alumnonamual">
+									<div class="card card-block">
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right"> Curso: </label>
+											<div class="col-sm-10">
+												<select class="c-select form-control boxed">
+													<option selected>- Seleccionar -</option>
+													<option value="1">Primaria-3INFA</option>
+													<option value="2">Primaria-2INFA</option>
+													<option value="3">Infantil-1INFA</option>
+												</select>
+											</div>
+										 </div>
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right"> Nombre Apellidos: </label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control boxed" placeholder="Nombre y Apellidos del Alumno"> </div>
 										</div>
-										   
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Teléfono: </label>
-										<div class="col-sm-10">
-											<input type="text" class="form-control boxed" placeholder=""> </div>
-									</div>	
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Responsable: </label>
-										<div class="col-sm-10">
-											<input type="text" class="form-control boxed" placeholder=""> </div>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Logo: </label>
-										<div class="col-sm-10">
-											<input type="file" class="form-control boxed" > </div>
-									</div>	
-								  <div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Empresa Servicio de Comedor: </label>
-										<div class="col-sm-10">
-											<select class="c-select form-control boxed">
-												<option selected>- Seleccionar -</option>
-												<option value="1">Catering Food</option>
-												<option value="2">Ldel Cusine</option>
-												<option value="3">Catefing Ilbest</option>
-												<option value="4">El Placer</option>
-											</select>
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right">Email 1</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control boxed" placeholder="Email del Primer Padre o Tutor"> </div>
 										</div>
-									</div>								
-									
-									<div class="form-group row">
-										<label class="col-sm-2 form-control-label text-xs-right"> Activado </label>
-										<div class="col-sm-10">
-											<label>
-												<input class="radio" name="inline-radios" type="radio" checked="checked">
-												<span>Si</span>
-											</label>
-											<label>
-												<input class="radio" name="inline-radios" type="radio">
-												<span>No</span>
-											</label> </div>
-									</div>							
-									<div class="form-group row">
-										<div class="col-sm-10 col-sm-offset-2">
-											<button type="submit" class="btn btn-primary"> Registrar </button>
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right"> Email 2</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control boxed" placeholder="Email del Segundo Padre o Tutor"> </div>
+										</div>								
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right"> Tiene Comedor </label>
+											<div class="col-sm-10">
+												<label>
+													<input class="radio" name="inline-radios" type="radio" checked="checked">
+													<span>Si</span>
+												</label>
+												<label>
+													<input class="radio" name="inline-radios" type="radio">
+													<span>No</span>
+												</label> 
+											</div>
+										</div>								
+										<div class="form-group row">
+											<label class="col-sm-2 form-control-label text-xs-right"> Descripción: </label>
+											<div class="col-sm-10">
+												<textarea id="descripcion" class="form-control boxed"></textarea>
+											</div>
+											   
+										</div>
+										<div class="form-group row">
+											<div class="col-sm-10 col-sm-offset-2">
+												<button type="submit" class="btn btn-primary"> Registrar </button>
+											</div>
 										</div>
 									</div>
+								</form>
 								</div>
-							</form>
-					  </div>
-					</div>	
+								<div class="tab-pane fade" id="profile">
+									<form name="alumnoautomatico">
+										<div class="card card-block">
+											<div class="form-group row">
+												<label class="col-sm-2 form-control-label text-xs-right"> Curso: </label>
+												<div class="col-sm-10">
+													<select class="c-select form-control boxed">
+														<option selected>- Seleccionar -</option>
+														<option value="1">Primaria-3INFA</option>
+														<option value="2">Primaria-2INFA</option>
+														<option value="3">Infantil-1INFA</option>
+													</select>
+												</div>
+											 </div>
+											<div class="form-group row">
+												<label class="col-sm-2 form-control-label text-xs-right"><img src="images/excell.png" class="img" style="width:30%"></label>
+												<div class="col-sm-10">
+													<input type="file" class="form-control boxed" > </div>
+											</div>
+
+											<div class="form-group row">
+												<div class="col-sm-10 col-sm-offset-2">
+													<button type="submit" class="btn btn-primary"> Registrar </button>
+												</div>
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+						<!-- /.card-block -->
+					</div>
+						  </div>
+						</div>						
 					</article>
                     <div class="card items">
                         <ul class="item-list striped">
@@ -353,26 +407,22 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <div class="item-col item-col-header fixed item-col-img md">
+                                    <div class="item-col item-col-header item-col-title">
                                         <div>
-                                            <span>Logo</span>
+                                            <span>Curso</span>
                                         </div>
                                     </div>
                                     <div class="item-col item-col-header item-col-title">
                                         <div>
                                             <span>Nombre</span>
                                         </div>
-                                    </div>
-                                    <div class="item-col item-col-header item-col-author">
+                                    </div>									
+                                    <div class="item-col item-col-header item-col-description">
                                         <div class="no-overflow">
-                                            <span>Responsable</span>
+                                            <span>Descripción</span>
                                         </div>
                                     </div>
-                                    <div class="item-col item-col-header item-col-date">
-                                        <div>
-                                            <span>Fecha Alta</span>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="item-col item-col-header fixed item-col-actions-dropdown"> </div>
                                 </div>
                             </li>
@@ -385,29 +435,78 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <div class="item-col fixed item-col-img md">
-                                        <a href="item-colegio.html">
-                                            <div class="item-img rounded" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg)"></div>
-                                        </a>
+									 <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Curso</div>
+                                        <div>
+                                            <h4 class="item-title"> 3INFA</h4>
+                                        </div>
+                                    </div>
+									 <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Nombre</div>
+                                        <div>
+                                            <h4 class="item-title">Lorem ipsum</h4>
+                                        </div>
+                                    </div>									
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
+                                        <div class="no-overflow">
+                                            Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
+                                        </div>
+                                    </div>									
+                                    <div class="item-col fixed item-col-actions-dropdown">
+                                        <div class="item-actions-dropdown">
+                                            <a class="item-actions-toggle-btn">
+                                                <span class="inactive">
+                                                    <i class="fa fa-cog"></i>
+                                                </span>
+                                                <span class="active">
+                                                    <i class="fa fa-chevron-circle-right"></i>
+                                                </span>
+                                            </a>
+                                            <div class="item-actions-block">
+                                                <ul class="item-actions-list">
+                                                    <li>
+                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
+                                                            <i class="fa fa-trash-o "></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="edit" href="">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-row">
+                                    <div class="item-col fixed item-col-check">
+                                        <label class="item-check" id="select-all-items">
+                                            <input type="checkbox" class="checkbox">
+                                            <span></span>
+                                        </label>
                                     </div>
                                     <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Curso</div>
+                                        <div>
+                                            <h4 class="item-title"> 2INFA</h4>
+                                        </div>
+                                    </div>
+									 <div class="item-col fixed pull-left item-col-title">
                                         <div class="item-heading">Nombre</div>
                                         <div>
-                                            <a href="item-colegio.html" class="">
-                                                <h4 class="item-title"> Lorem ipsum dolor sit ame </h4>
-                                            </a>
+                                            <h4 class="item-title">  Lorem ipsum</h4>
                                         </div>
-                                    </div>
-                                      <div class="item-col item-col-author">
-                                        <div class="item-heading">Responsable</div>
+                                    </div>										
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
                                         <div class="no-overflow">
-                                            <a href="">Alexander Sargssyan</a>
+                                            Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
                                         </div>
-                                    </div>
-                                    <div class="item-col item-col-date">
-                                        <div class="item-heading">Published</div>
-                                        <div class="no-overflow"> 21 SEP 10:45 </div>
-                                    </div>
+                                    </div>	
                                     <div class="item-col fixed item-col-actions-dropdown">
                                         <div class="item-actions-dropdown">
                                             <a class="item-actions-toggle-btn">
@@ -426,7 +525,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="edit" href="item-colegio.html">
+                                                        <a class="edit" href="item-empresa.html">
                                                             <i class="fa fa-pencil"></i>
                                                         </a>
                                                     </li>
@@ -443,30 +542,25 @@
                                             <input type="checkbox" class="checkbox">
                                             <span></span>
                                         </label>
-                                    </div>
-                                    <div class="item-col fixed item-col-img md">
-                                        <a href="item-colegio.html">
-                                            <div class="item-img rounded" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/eduardo_olv/128.jpg)"></div>
-                                        </a>
                                     </div>
                                     <div class="item-col fixed pull-left item-col-title">
+                                        <div class="item-heading">Curso</div>
+                                        <div>
+                                           <h4 class="item-title"> 1INFA </h4>
+                                        </div>
+                                    </div>
+									 <div class="item-col fixed pull-left item-col-title">
                                         <div class="item-heading">Nombre</div>
                                         <div>
-                                            <a href="item-colegio.html" class="">
-                                                <h4 class="item-title"> Lorem ipsum dolor sit ame </h4>
-                                            </a>
+                                            <h4 class="item-title">Lorem ipsum</h4>
                                         </div>
-                                    </div>
-                                      <div class="item-col item-col-author">
-                                        <div class="item-heading">Responsable</div>
+                                    </div>										
+                                     <div class="item-col item-col-description">
+                                        <div class="item-heading">Descripción</div>
                                         <div class="no-overflow">
-                                            <a href="">Alexander Sargssyan</a>
+                                             Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame
                                         </div>
-                                    </div>
-                                    <div class="item-col item-col-date">
-                                        <div class="item-heading">Published</div>
-                                        <div class="no-overflow"> 21 SEP 10:45 </div>
-                                    </div>
+                                    </div>	
                                     <div class="item-col fixed item-col-actions-dropdown">
                                         <div class="item-actions-dropdown">
                                             <a class="item-actions-toggle-btn">
@@ -485,7 +579,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="edit" href="item-colegio.html">
+                                                        <a class="edit" >
                                                             <i class="fa fa-pencil"></i>
                                                         </a>
                                                     </li>
@@ -494,185 +588,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-row">
-                                    <div class="item-col fixed item-col-check">
-                                        <label class="item-check" id="select-all-items">
-                                            <input type="checkbox" class="checkbox">
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                    <div class="item-col fixed item-col-img md">
-                                        <a href="item-colegio.html">
-                                            <div class="item-img rounded" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/why_this/128.jpg)"></div>
-                                        </a>
-                                    </div>
-                                    <div class="item-col fixed pull-left item-col-title">
-                                        <div class="item-heading">Nombre</div>
-                                        <div>
-                                            <a href="item-colegio.html" class="">
-                                                <h4 class="item-title"> Lorem ipsum dolor sit ame </h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                      <div class="item-col item-col-author">
-                                        <div class="item-heading">Responsable</div>
-                                        <div class="no-overflow">
-                                            <a href="">Alexander Sargssyan</a>
-                                        </div>
-                                    </div>
-                                    <div class="item-col item-col-date">
-                                        <div class="item-heading">Published</div>
-                                        <div class="no-overflow"> 21 SEP 10:45 </div>
-                                    </div>
-                                    <div class="item-col fixed item-col-actions-dropdown">
-                                        <div class="item-actions-dropdown">
-                                            <a class="item-actions-toggle-btn">
-                                                <span class="inactive">
-                                                    <i class="fa fa-cog"></i>
-                                                </span>
-                                                <span class="active">
-                                                    <i class="fa fa-chevron-circle-right"></i>
-                                                </span>
-                                            </a>
-                                            <div class="item-actions-block">
-                                                <ul class="item-actions-list">
-                                                    <li>
-                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
-                                                            <i class="fa fa-trash-o "></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="edit" href="item-colegio.html">
-                                                            <i class="fa fa-pencil"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-row">
-                                    <div class="item-col fixed item-col-check">
-                                        <label class="item-check" id="select-all-items">
-                                            <input type="checkbox" class="checkbox">
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                    <div class="item-col fixed item-col-img md">
-                                        <a href="item-colegio.html">
-                                            <div class="item-img rounded" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/w7download/128.jpg)"></div>
-                                        </a>
-                                    </div>
-                                     <div class="item-col fixed pull-left item-col-title">
-                                        <div class="item-heading">Nombre</div>
-                                        <div>
-                                            <a href="item-colegio.html" class="">
-                                                <h4 class="item-title"> Lorem ipsum dolor sit ame </h4>
-                                            </a>
-                                        </div>
-                                    </div>
-                                      <div class="item-col item-col-author">
-                                        <div class="item-heading">Responsable</div>
-                                        <div class="no-overflow">
-                                            <a href="">Alexander Sargssyan</a>
-                                        </div>
-                                    </div>
-                                    <div class="item-col item-col-date">
-                                        <div class="item-heading">Published</div>
-                                        <div class="no-overflow"> 21 SEP 10:45 </div>
-                                    </div>
-                                    <div class="item-col fixed item-col-actions-dropdown">
-                                        <div class="item-actions-dropdown">
-                                            <a class="item-actions-toggle-btn">
-                                                <span class="inactive">
-                                                    <i class="fa fa-cog"></i>
-                                                </span>
-                                                <span class="active">
-                                                    <i class="fa fa-chevron-circle-right"></i>
-                                                </span>
-                                            </a>
-                                            <div class="item-actions-block">
-                                                <ul class="item-actions-list">
-                                                    <li>
-                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
-                                                            <i class="fa fa-trash-o "></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="edit" href="item-colegio.html">
-                                                            <i class="fa fa-pencil"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-row">
-                                    <div class="item-col fixed item-col-check">
-                                        <label class="item-check" id="select-all-items">
-                                            <input type="checkbox" class="checkbox">
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                    <div class="item-col fixed item-col-img md">
-                                        <a href="item-colegio.html">
-                                            <div class="item-img rounded" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/pankogut/128.jpg)"></div>
-                                        </a>
-                                    </div>
-                                     <div class="item-col fixed pull-left item-col-title">
-                                        <div class="item-heading">Nombre</div>
-                                        <div>
-                                            <a href="item-colegio.html" class="">
-                                                <h4 class="item-title"> Lorem ipsum dolor sit ame </h4>
-                                            </a>
-                                        </div>
-                                    </div>
- 
-                                      <div class="item-col item-col-author">
-                                        <div class="item-heading">Responsable</div>
-                                        <div class="no-overflow">
-                                            <a href="">Alexander Sargssyan</a>
-                                        </div>
-                                    </div>
-                                    <div class="item-col item-col-date">
-                                        <div class="item-heading">Published</div>
-                                        <div class="no-overflow"> 21 SEP 10:45 </div>
-                                    </div>
-                                    <div class="item-col fixed item-col-actions-dropdown">
-                                        <div class="item-actions-dropdown">
-                                            <a class="item-actions-toggle-btn">
-                                                <span class="inactive">
-                                                    <i class="fa fa-cog"></i>
-                                                </span>
-                                                <span class="active">
-                                                    <i class="fa fa-chevron-circle-right"></i>
-                                                </span>
-                                            </a>
-                                            <div class="item-actions-block">
-                                                <ul class="item-actions-list">
-                                                    <li>
-                                                        <a class="remove" href="#" data-toggle="modal" data-target="#confirm-modal">
-                                                            <i class="fa fa-trash-o "></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="edit" href="item-colegio.html">
-                                                            <i class="fa fa-pencil"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            </li>							
+                        
                         </ul>
                     </div>
                     <nav class="text-right">
